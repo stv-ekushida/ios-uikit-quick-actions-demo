@@ -3,6 +3,8 @@
 ## 概要
 アプリアイコンを強く押し込んだ時に表示されるメニューから操作できるアクションのこと
 
+<img width="241" alt="2017-04-28 8 24 15" src="https://cloud.githubusercontent.com/assets/9479568/25508306/1bafc208-2bec-11e7-8cc0-3c931774cbc3.png">
+
 ## 関連クラス
 UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplicationShortcutItem
 
