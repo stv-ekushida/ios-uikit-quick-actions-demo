@@ -17,6 +17,23 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
 | UIApplicationShortcutItemIconFile	| 自分で用意したアイコン画像の名前。画像サイズは 35 x 35 ポイント。|
 | UIApplicationShortcutItemUserInfo	| 起動時に渡されるデータを保持したディクショナリ。 |
 
+
+```
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypePlay</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Play</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Start playback</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>PlayMusic</string>
+		</dict>
+	</array>
+```
+
 ## 動的アクション
 
 ```swift:Application.swift
@@ -28,6 +45,25 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
         )
 
         application.shortcutItems = [shortcut]
+```
+
+## Quick Actionで呼ばれるメソッド
+
+```swift:Application.swift
+    func application(_ application: UIApplication,
+                     performActionFor shortcutItem: UIApplicationShortcutItem,
+                     completionHandler: @escaping (Bool) -> Void) {
+        
+        switch (shortcutItem.type) {
+        case "PlayMusic" :
+            showAlert(message: shortcutItem.localizedTitle)
+        case "SearchMusic":
+            showAlert(message: shortcutItem.localizedTitle)
+        default:
+            break
+        }
+        completionHandler(true)
+    }
 ```
 
 ## フレームワーク
