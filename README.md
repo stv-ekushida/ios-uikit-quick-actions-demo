@@ -1,4 +1,4 @@
-# Qicik Action
+# HomeScreen Qicik Action
 
 ## 概要
 アプリアイコンを強く押し込んだ時に表示されるメニューから操作できるアクションのこと
