@@ -13,7 +13,7 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
 | Key | 意味 |
 | ---|---|
 | UIApplicationShortcutItemType (必須)	| アクション種別を表す文字列。 |
-| UIApplicationShortcutItemTitle (必須)	| Home Screen 上に表示されるタイトル。多言語化は InfoPlist.strings で行う。|
+| UIApplicationShortcutItemTitle (必須)	| Home Screen 上に表示されるタイトル。<br>多言語化は InfoPlist.strings で行う。|
 | UIApplicationShortcutItemSubtitle	| Home Screen 上に表示されるサブタイトル。|
 | UIApplicationShortcutItemIconType	| アイコンの種別。システムで用意されているアイコン画像がある。|
 | UIApplicationShortcutItemIconFile	| 自分で用意したアイコン画像の名前。画像サイズは 35 x 35 ポイント。|
