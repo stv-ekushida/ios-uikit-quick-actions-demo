@@ -19,6 +19,7 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
 | UIApplicationShortcutItemIconFile	| 自分で用意したアイコン画像の名前。画像サイズは 35 x 35 ポイント。|
 | UIApplicationShortcutItemUserInfo	| 起動時に渡されるデータを保持したディクショナリ。 |
 
+### Info.plist
 
 ```
 	<key>UIApplicationShortcutItems</key>
