@@ -1,7 +1,7 @@
 # HomeScreen Qicik Action
 
 ## 概要
-アプリアイコンを強く押し込んだ時に表示されるメニューから操作できるアクションのこと
+アプリアイコンを強く押し込んだ時に表示されるメニューから操作できるアクションのことです。
 
 <img width="241" alt="2017-04-28 8 24 15" src="https://cloud.githubusercontent.com/assets/9479568/25508306/1bafc208-2bec-11e7-8cc0-3c931774cbc3.png">
 
@@ -38,6 +38,8 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
 
 ## 動的アクション
 
+AppDelegate.swift
+
 ```swift:Application.swift
         let shortcut = UIMutableApplicationShortcutItem(type: "SearchMusic",
                                                          localizedTitle: "Search",
@@ -50,6 +52,8 @@ UIApplicationShortcutIconType、UIApplicationShortcutItem、UIMutableApplication
 ```
 
 ## Quick Actionで呼ばれるメソッド
+
+AppDelegate.swift
 
 ```swift:Application.swift
     func application(_ application: UIApplication,
